@@ -91,3 +91,19 @@ foreach ($arr as $num) $sumArr += pow($num,2);
 $sqrtArr = sqrt($sumArr);
 echo "$sqrtArr\n";
 
+// 3)Работа с функциями округления
+$sqrt1 = sqrt(379);
+echo round($sqrt1, 0) . "\n";
+echo round($sqrt1, 1) . "\n";
+echo round($sqrt1, 2) . "\n";
+
+$sqrt2 = sqrt(587);
+
+$resArray = [
+    'floor' => floor($sqrt2),
+    'ceil' => ceil($sqrt2),
+];
+
+
+
+
