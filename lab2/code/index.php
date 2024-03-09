@@ -225,5 +225,61 @@ function sumDigits($number)
 echo sumDigits(78323412);
 echo "\n";
 
+// 17. Массивы
+$arr4 = ['x'];
+$n = 7;
+for ($i = 1; $i < $n; $i++){
+    $arr4[$i] = $arr4[$i - 1].'x';
+}
+
+print_r($arr4);
+
+function arrayFill($v, $count) {
+    $arr5 = [];
+    for ($i = 0; $i < $count; $i++) {
+        $arr5[] = $v;
+    }
+    return $arr5;
+}
+$r = arrayFill('x', 5);
+print_r($r);
+
+
+$arr6 = [[1, 2, 3], [4, 5], [6]];
+$sum = 0;
+foreach ($arr6 as $i) {
+    foreach ($i as $j) {
+        $sum += $j;
+    }
+}
+echo "Двумер массив: $sum\n";
+
+$arr7 = [];
+$k = 1; //счетчик
+for ($i = 0; $i < 3; $i++) {
+    for ($j = 0; $j < 3; $j++) {
+        $arr7[$i][$j] = $k;
+        $k++;
+    }
+}
+print_r($arr7);
+
+$arr8 = [2, 5, 3, 9];
+$result = ($arr8[0] * $arr8[1]) + ($arr8[2] * $arr8[3]);
+echo $result. "\n";
+
+
+$user = ['name' => "Ivan", 'surname' => "Petrov", 'patronymic' => "Pavlovich"];
+echo $user["surname"] . " " . $user['name'] . " " . $user['patronymic'] . "\n";
+
+$date = ['year' => '2024', 'month' => '03', 'day' => '09'];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day']. "\n";
+
+$arr9 = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr9) . "\n";
+
+
+echo $arr9[count($arr9) - 1] . "\n";
+echo $arr9[count($arr9) - 2] . "\n";
 
 
