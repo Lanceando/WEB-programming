@@ -103,6 +103,16 @@ $resArray = [
     'floor' => floor($sqrt2),
     'ceil' => ceil($sqrt2),
 ];
+echo $resArray['floor'] . " " . $resArray['ceil'] . "\n";
+
+// 4) Работа с min и max
+
+$arr = [4, -2, 5, 19, -130, 0, 10];
+$minArr = min($arr);
+$maxArr = max($arr);
+echo "max: ". $maxArr . " min: ".  $minArr . "\n";
+
+
 
 
 
