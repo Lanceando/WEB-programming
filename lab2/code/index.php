@@ -78,4 +78,16 @@ else {
 }
 echo "\n";
 
+// 2) Работа со степенью и корнем
+
+$st = pow(2,10);
+echo "$st\n";
+$st1 = sqrt(245);
+echo "$st1\n";
+$arr = [4, 2, 5, 19, 13, 0, 10];
+
+$sumArr = 0;
+foreach ($arr as $num) $sumArr += pow($num,2);
+$sqrtArr = sqrt($sumArr);
+echo "$sqrtArr\n";
 
