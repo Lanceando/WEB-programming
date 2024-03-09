@@ -282,4 +282,48 @@ echo count($arr9) . "\n";
 echo $arr9[count($arr9) - 1] . "\n";
 echo $arr9[count($arr9) - 2] . "\n";
 
+// 18 if else
+
+function TrueFalse($num1, $num2)
+{
+    if ($num1 + $num2 > 10) {
+        return true;
+    }
+    else
+        return false;
+}
+echo TrueFalse(5,5). "\n";
+
+function TrueFalse1($num1, $num2)
+{
+    if ($num1 == $num2) {
+        return true;
+    }
+    else
+        return false;
+}
+echo TrueFalse1(4,3) . "\n";
+
+$test = 0;
+if ($test == 0) echo 'верно';
+echo "\n";
+
+$age = rand(1, 111);
+echo "age = $age\n";
+if ($age < 10 || $age > 99) {
+    echo "число меньше 10 или больше 99\n";
+} else {
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9) {
+        echo "сумма цифр однозначна\n";
+    } else {
+        echo "сумма цифр двузначна\n";
+    }
+}
+
+$arr10 = [4, 2, 3];
+if (count($arr10) == 3) {
+    $sum = array_sum($arr10);
+    echo "Сумма элементов массива: $sum\n";
+}
 
