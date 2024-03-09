@@ -43,8 +43,10 @@ $days = 16 * $months;
 $days_per_language = $days / $num_languages;
 
 echo $days_per_language;
+echo "\n";
 
+// 12. Степень
 
-
-
+echo 8 ** 2;
+echo "\n";
 
