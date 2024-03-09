@@ -62,4 +62,20 @@ $answer -= $my_num;
 echo $answer;
 echo "\n";
 
+// 14. Математические функции
+// 1) Работа с %
+$a = 10;
+$b = 3;
+$res = $a % $b;
+echo $res;
+echo "\n";
+
+if ($a % $b == 0){
+    echo "Делится, $res";
+}
+else {
+    echo "Делится с остатком, $res";
+}
+echo "\n";
+
 
