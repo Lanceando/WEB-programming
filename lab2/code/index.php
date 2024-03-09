@@ -50,3 +50,16 @@ echo "\n";
 echo 8 ** 2;
 echo "\n";
 
+// 13. Операторы присвоения
+
+$my_num = 24;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+echo "\n";
+
+
