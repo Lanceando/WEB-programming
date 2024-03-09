@@ -141,5 +141,34 @@ for ($i = 0; $i < count($arr); $i++) {
 }
 */
 
+//7) Общее
+
+$num = 30;
+$div = array();
+$j = 0;
+for($i = 1; $i < $num + 1; $i++){
+    if ($num % $i == 0){
+        array_push($div, $i);
+        $j += 1;
+    }
+}
+/*
+for ($i = 0; $i < count($div); $i++) {
+    echo $div[$i] . "\n";
+}
+*/
+
+$arr =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum = 0;
+$i = 0;
+while($sum <= 10){
+    $sum += $arr[$i];
+    $i++;
+}
+echo $i . "\n";
+
+
+
+
 
 
