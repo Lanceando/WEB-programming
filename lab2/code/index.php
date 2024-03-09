@@ -112,6 +112,16 @@ $minArr = min($arr);
 $maxArr = max($arr);
 echo "max: ". $maxArr . " min: ".  $minArr . "\n";
 
+// 5) работа с рандомом
+
+echo rand(1,100) . "\n";
+
+for ($i = 0; $i < 10; $i++) {
+    $arr[$i] = rand();
+}
+for ($i = 0; $i < 10; $i++) {
+    echo $arr[$i] . "\n";
+}
 
 
 
