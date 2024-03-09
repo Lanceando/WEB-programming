@@ -123,7 +123,23 @@ for ($i = 0; $i < 10; $i++) {
     echo $arr[$i] . "\n";
 }
 
+// 6) Работа с модулем
 
+$a = 5;
+$b = 10;
+echo abs($a - $b). "\n";
+
+$arr = [1, 2, -1, -2, 3, -3];
+$arrAbs = [];
+
+for($i = 0; $i < count($arr); $i++){
+    $arrAbs[$i] = abs($arr[$i]);
+}
+/*
+for ($i = 0; $i < count($arr); $i++) {
+    echo $arrAbs[$i] . "\n";
+}
+*/
 
 
 
