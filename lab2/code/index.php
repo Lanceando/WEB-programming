@@ -167,8 +167,63 @@ while($sum <= 10){
 }
 echo $i . "\n";
 
+// 15) Функции
 
+function printStringReturnNumber()
+{
+    echo "string";
+    return 1337;
+}
 
+$my_num = printStringReturnNumber();
+echo $my_num . "\n";
+
+// 16) Функции
+
+function increaseEnthusiasm(string $str)
+{
+    return "$str!";
+}
+echo increaseEnthusiasm("GO") . "\n";
+
+function repeatThreeTimes(string $str)
+{
+    return $str.$str.$str;
+}
+
+echo repeatThreeTimes("GO")."\n";
+echo increaseEnthusiasm(repeatThreeTimes("УРА"))."\n";
+
+function cut(string $str, int $len = 10)
+{
+    return substr($str, 0, $len);
+}
+
+function recOutArr($arr, $index = 0)
+{
+    echo $arr[$index++] . " ";
+    if ($index < count($arr)) {
+        recOutArr($arr, $index);
+    }
+}
+recOutArr([1, 2, 3, 4, 5, 6, 7]);
+echo "\n";
+
+function sumDigits($number)
+{
+    $sum = 0;
+    foreach (str_split("$number") as $digit) {
+        $sum += intval($digit);
+    }
+    if ($sum > 9) {
+        return sumDigits($sum);
+    }
+    else {
+        return $sum;
+    }
+}
+echo sumDigits(78323412);
+echo "\n";
 
 
 
