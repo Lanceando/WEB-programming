@@ -28,7 +28,27 @@
         <th>Заголовок</th>
         <th>Текст объявления</th>
     </tr>
-
+    <?php
+    $categories = ['Машины', 'Вакансии'];
+    foreach ($categories as $category) {
+        $dir = "./$category/";
+        if (is_dir($dir)) {
+            $files = scandir($dir);
+            foreach ($files as $file) {
+                if ($file != '.' && $file != '..') {
+                    $ad_content = file_get_contents($dir . $file);
+                    $ad_data = explode("\n", $ad_content);
+                    echo "<tr>";
+                    echo "<td>" . $ad_data[0] . "</td>";
+                    echo "<td>" . $category . "</td>";
+                    echo "<td>" . basename($file, ".txt") . "</td>";
+                    echo "<td>" . $ad_data[1] . "</td>";
+                    echo "</tr>";
+                }
+            }
+        }
+    }
+    ?>
 </table>
 </body>
 </html>
