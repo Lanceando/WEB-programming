@@ -17,7 +17,7 @@ session_start();
     <input type="text" id="name" name="name"><br><br>
     <label for="age">Возраст:</label><br>
     <input type="number" id="age" name="age"><br><br>
-    <input type="submit" value="Submit">
+    <button type="submit">Отправить</button>
 </form>
 </body>
 </html>
